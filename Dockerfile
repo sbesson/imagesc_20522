@@ -13,4 +13,4 @@ ADD test.fake /data
 ADD test.fake.ini /data
 ADD entrypoint.sh /usr/local/bin
 
-ENTRYPOINT ["/usr/local/bin/convert_patterns.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
