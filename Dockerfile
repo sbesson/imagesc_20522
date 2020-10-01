@@ -9,8 +9,8 @@ RUN mv bioformats2raw-0.2.5 /opt/bioformats2raw
 RUN mv raw2ometiff-0.2.8 /opt/raw2ometiff
 RUN mv bftools /opt/bftools
 
-ADD test.fake /data
-ADD test.fake.ini /data
+ADD test.fake /tmp
+ADD test.fake.ini /tmp
 ADD entrypoint.sh /usr/local/bin
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
