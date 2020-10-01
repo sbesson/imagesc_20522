@@ -1,5 +1,8 @@
-/opt/bfconvert /data/test.fake /data/default.ome.tiff
-/opt/bfconvert -tilex -tiley /data/test.fake /data/default.ome.tiff
+#! /bin/bash
+
+
+/opt/bftools/bin/bfconvert /data/test.fake /data/default.ome.tiff
+/opt/bftools/bin/bfconvert -tilex -tiley /data/test.fake /data/default.ome.tiff
 
 mkdir /data/raw
 /opt/bioformats2raw/bin/bioformats2raw /data/test.fake /data/raw/
